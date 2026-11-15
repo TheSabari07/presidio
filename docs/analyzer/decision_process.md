@@ -46,9 +46,9 @@ For example:
 
     # Call analyzer to get results
     results = analyzer.analyze(text='My phone number is 212-555-5555', 
-                            entities=['PHONE_NUMBER'], 
-                            language='en', 
-                            return_decision_process=True)
+
+
+
     
     # Get the decision process results for the first result
     print(results[0].analysis_explanation)
@@ -69,9 +69,9 @@ analyzer = AnalyzerEngine(log_decision_process=True)
 
 # Call analyzer to get results
 results = analyzer.analyze(text='My phone number is 212-555-5555', 
-                           entities=['PHONE_NUMBER'], 
-                           language='en', 
-                           correlation_id="xyz")
+
+
+
 ```
 
 The decision process logs will be written to standard output.
